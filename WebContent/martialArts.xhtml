@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+        <title>Comedy</title>
+    </h:head>
+    <h:body>
+        <h2>Martial Arts Star</h2>
+        <h:form>
+                <label>Bruce Lee or Jackie Chan?</label>
+                <br/><br/>
+                 <h:selectOneMenu required='true' value="#{answers.selection}">
+                	<f:selectItem itemValue="" itemLabel="Please Select" />
+                    <f:selectItem itemValue="bruceLee" itemLabel="Bruce Lee" />
+                    <f:selectItem itemValue="jackieChan" itemLabel="Jackie Chan" />
+                </h:selectOneMenu>
+                <br/><br/>
+                <h:commandButton action="#{answers.MartialArts}" value='Next'></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
